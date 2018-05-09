@@ -1,0 +1,35 @@
+{
+  "name": "typescript-x0-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Shane Logsdon <shane@shanelogsdon.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build":
+      "x0 build src/index.tsx --static --out-dir dist --config config/webpack.js",
+    "clean": "rm -rf dist",
+    "format":
+      "prettier --config config/.prettierrc --write '*.json' '*.md' 'config/**/*' 'src/**/*'",
+    "prebuild": "yarn run clean",
+    "start": "x0 src/index.tsx --config config/webpack.js",
+    "test": "tslint --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@compositor/x0": "^4.0.2",
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-router-dom": "^4.2.6",
+    "awesome-typescript-loader": "^5.0.0",
+    "prettier": "^1.12.1",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "react-router-dom": "^4.2.2"
+  },
+  "x0": {
+    "title": "TypeScript x0 Demo",
+    "routes": ["/", "/contact/"]
+  }
+}

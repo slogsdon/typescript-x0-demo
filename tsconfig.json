@@ -1,0 +1,16 @@
+{
+  "awesomeTypescriptLoaderOptions": {
+    "silent": true
+  },
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "lib": ["dom", "esnext"],
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
